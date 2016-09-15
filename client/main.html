@@ -1,0 +1,224 @@
+<head>
+  <title>PlotEvents</title>
+    <link rel="icon" href="icon.ico">
+</head>
+
+<body>
+  {{> navbar}}
+  {{> mainbody}}
+</body>
+
+<template name="navbar">
+    <!-- Fixed navbar -->
+    <div class="pos-f-t">
+      <nav class="navbar navbar-dark bg-info navbar-static-top">
+        <div class="container">
+          <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar2">
+            &#9776;
+          </button>
+          <div class="collapse navbar-toggleable-xs" id="exCollapsingNavbar2">
+              <img class="navbar-brand css-navbar-brand-img" src="icon.png" height="60px;">&nbsp;
+                <a class="navbar-brand css-navbar-brand-title" href="#">PlotEvents</a>
+            <ul class="nav navbar-nav">
+              <li class="nav-item active">
+                  
+                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Profile</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Messages</a>
+              </li>
+            </ul>
+      
+            <ul class="nav navbar-nav navbar-top-links pull-right">
+                <li class="nav-item notification"><i class="fa fa-bell fa-lg" aria-hidden="true"></i></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"><img class="img-circle nav-pic" src="images/profile.png"></a>
+                    <div class="dropdown-menu">
+                      <a class="dropdown-item" href="#"><i class="fa fa-cog" aria-hidden="true"> </i> Settings</a>
+                      <a class="dropdown-item" href="#"><i class="fa fa-sign-out" aria-hidden="true"></i> logout</a>
+                    </div>
+                </li>
+            </ul> 
+          </div>
+        </div>
+      </nav>
+    </div> 
+</template>
+
+
+<!-- Main body templates -->
+<template name="mainbody">
+   <div class="container">
+    {{> home}}
+       
+   </div>
+</template>
+
+<template name="home">
+<div class="container mainbody">
+  <div class="row">
+    <div class="col-sm-3">
+        <div class="jumbotron css-jumbopic">
+            <center>
+                <div class="pull-right">
+                    <img src="images/profile.png" alt="Profile pic" class="img-circle profile-pic"/>
+                </div>
+                <p class="lead">Sankar Bheemarasetty</p>
+                <hr class="m-y-2">
+                <p>When you don't wanna leave a place during your holiday is the true enjoyment and most memorable one!</p>
+                </center>
+        </div>
+        <div class="jumbotron css-jumbopic">
+            <i class="fa fa-bookmark" aria-hidden="true"></i> Bookmarked Groups
+            <ul class="css-group">
+            <a><li>group 1</li></a>
+            <a><li>group 2</li></a>
+            <a><li>group 3</li></a>
+            </ul>
+        </div>
+        <div class="jumbotron css-jumbopic">
+            <span>Designed and build with <i class="fa fa-heart" aria-hidden="true"></i> | &copy; 2016 PlotEvents.</span>
+        </div>
+    </div>
+    <div class="col-sm-9">
+        <div class="jumbotron css-jumbopic">
+                <div class="form-group">
+                    <form>
+                        <textarea class="form-control" id="exampleTextarea" rows="2" placeholder="Share within your group"></textarea><br/>
+                        <div class="pull-right css-icons">
+                            <i class="fa fa-user fa-lg" aria-hidden="true"></i>
+                            <i class="fa fa-file fa-lg" aria-hidden="true"></i>
+                            <i class="fa fa-camera fa-lg" aria-hidden="true"></i>
+                            <i class="fa fa-video-camera fa-lg" aria-hidden="true"></i>
+                            <i class="fa fa-external-link fa-lg" aria-hidden="true"></i>
+                            <i class="fa fa-tags fa-lg" aria-hidden="true"></i>
+                            <i class="fa fa-cog fa-lg" aria-hidden="true"></i>
+                            <i class="fa fa-question-circle fa-lg" aria-hidden="true"></i>
+                            <button type="submit" class="btn btn-info"><i class="fa fa-paper-plane" aria-hidden="true"></i> Share</button><br/>
+                        </div>
+                    </form>
+                </div><br/>
+             </div>
+                <hr class="m-y-2">
+                <div class="alert alert-warning alert-dismissible fade in" role="alert">
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <strong>Good Morning Sankar!</strong> We wish you a good day.
+                </div>
+       
+        
+        <div class="jumbotron css-jumbopic">
+            
+                <div class="container">
+	               <div class="row">
+		              <div class="timeline-centered">
+                        <article class="timeline-entry">
+                            <div class="timeline-entry-inner">
+                                <time class="timeline-time" datetime="2014-01-10T03:45"><span>03:30 PM</span> <span>Today</span></time>
+                                <div class="timeline-icon bg-success">
+                                    <i class="entypo-feather"></i>
+                                </div>
+                                <div class="timeline-label">
+                                    <h2><a href="#">User</a> <span>posted a status update</span></h2>
+                                    <p>When you don't wanna leave a place during your holiday is the true enjoyment and most memorable one!.</p>
+                                </div>
+                            </div>
+                        </article>
+	
+	
+                        <article class="timeline-entry left-aligned">
+                            <div class="timeline-entry-inner">
+                                <time class="timeline-time" datetime="2014-01-10T03:45"><span>11:45 AM</span> <span>Today</span></time>
+                                <div class="timeline-icon bg-secondary">
+                                    <i class="entypo-suitcase"></i>
+                                </div>
+                                <div class="timeline-label">
+                                    <h2><a href="#">Job Meeting</a></h2>
+                                    <p>You have a meeting at <strong> Office</strong> Today.</p>
+                                </div>
+                            </div>
+                        </article>
+	
+	
+                        <article class="timeline-entry">
+                            <div class="timeline-entry-inner">
+                                <time class="timeline-time" datetime="2014-01-09T13:22"><span>09:45 AM</span> <span>Today</span></time>
+                                <div class="timeline-icon bg-info">
+                                    <i class="entypo-location"></i>
+                                </div>
+                                <div class="timeline-label">
+                                    <h2><a href="#">User</a> <span>checked in at</span> <a href="#">Paris</a></h2>
+                                    <blockquote>Great place, feeling like in home.</blockquote>
+                                </div>
+                            </div>
+                        </article>
+	
+	
+                        <article class="timeline-entry left-aligned">
+                            <div class="timeline-entry-inner">
+                                <time class="timeline-time" datetime="2014-01-10T03:45"><span>07:45 AM</span> <span>Today</span></time>
+                                <div class="timeline-icon bg-warning">
+                                    <i class="entypo-camera"></i>
+                                </div>
+                                <div class="timeline-label">
+                                    <h2><a href="#">User</a> <span>changed his</span> <a href="#">Profile Picture</a></h2>
+                                    <img src="images/profile.png" class="img-responsive img-rounded full-width">
+                                </div>
+                            </div>
+                        </article>
+	
+	
+                        <article class="timeline-entry begin">
+                            <div class="timeline-entry-inner">
+                                <div class="timeline-icon" style="-webkit-transform: rotate(-90deg); -moz-transform: rotate(-90deg);">
+                                    <i class="entypo-flight"></i>
+                                </div>
+                                <div class="timeline-label">
+                                    <blockquote>Born 07 Jan 1989</blockquote>
+                                </div>
+                            </div>
+                        </article>
+	
+                    </div>
+	           </div>
+            </div>
+        </div>
+        
+        
+        <div class="jumbotron css-jumbopic">
+            <div class="row">
+                <div class="col col-md-2">
+                <img src="images/profile.png" alt="Profile pic" class="img-circle profile-pic"/>
+                </div>
+                <div class="col col-md-10"><i class="fa fa-chevron-down pull-right" aria-hidden="true"></i>
+                <h6>Sankar Bheemarasetty</h6>
+                    
+                <p>When you don't wanna leave a place during your holiday is the true enjoyment and most memorable one!. </p>
+                    <div class="css-post-buttons">
+                        <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+                        <i class="fa fa-thumbs-up" aria-hidden="true"></i>
+                        <i class="fa fa-thumbs-down" aria-hidden="true"></i>
+                        <i class="fa fa-comments" aria-hidden="true"></i>
+                        <i class="fa fa-share-alt-square" aria-hidden="true"></i>
+                    </div>
+                </div>
+            </div>    
+        </div>
+    </div>
+  </div>
+    
+</div>
+    
+</template>
+
+<template name="footer">
+    <footer class="footer">
+      <div class="container">
+        <span>Designed and build with <i class="fa fa-heart" aria-hidden="true"></i> | &copy; 2016 PlotEvents.</span>
+      </div>
+    </footer>
+</template>
